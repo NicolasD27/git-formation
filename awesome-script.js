@@ -8,6 +8,7 @@ function parseNumbers(filename) {
       .map((line) => line.trim())
       .filter((line) => line !== "")
       .map(Number);
+      console.log("REALLY IMPORTANT");
     return nums;
   } catch (err) {
     console.error("Error reading file:", err);
